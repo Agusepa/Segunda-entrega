@@ -1,0 +1,169 @@
+/*index*/
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e7cfe0 !important;
+}
+
+h3{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+h1{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 4rem;
+    
+    
+}
+.contenedor{
+    font-family: 'Red Hat Mono', monospace;
+   
+}
+
+main{
+     text-align: center;
+     grid-area: main;
+     margin: 100px;
+     padding: 30px;
+   
+}
+.containermain{
+    display: flex;
+    flex-direction: row;
+}
+.presentacion{
+    position: relative;
+    left: 450px;
+    top: 100px;
+    animation:fadeInLeft;
+    animation-duration: 2s;
+}
+.fotomenu{
+    height: 400px;
+    position: relative;
+    left: 350px;
+    top: 100px;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+.botoncv{
+    color: lavender;
+    background-color: rgb(21, 19, 19);
+    font-family: 'Red Hat Mono', monospace;
+    margin: 40px;
+    padding: 10px;
+    animation: fadeInDown; 
+    animation-duration: 7s ;
+    position: relative;
+    right: 2px;    
+}
+.botoncv:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+
+
+/*footer*/
+
+/*index cierre*/
+.misProyectos{
+    margin: 10px;
+    position: relative;
+    bottom: 70px;
+}
+.textoProyectos{
+   position: relative;
+   bottom: 50px;
+}
+/*proyecto 1*/
+.proyecto1{
+    text-align: center;
+    margin: 3rem;
+    padding: 5px;
+}
+
+.backP{
+    margin:3rem;
+    padding:10px;
+    color:black;
+    font-size: x-large;
+}
+.emplearte2{
+    height: 500px;
+}
+.parrafoP1{
+    margin: 1rem;
+    padding: 60px;
+}
+/*proyecto 1 cierre*/
+
+/*Sobre mi*/
+.contenedorSobreMi {
+	background: antiquewhite;
+	padding: 0px;
+	margin: 0px;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(3fr);
+	grid-template-rows: repeat(3fr);
+	grid-template-areas: "header header header"
+			             "main main main"
+			             "footer footer footer";
+}
+
+.mainSobreMi{
+    display: flex;
+    flex-direction: row;
+}
+.imSobreMi{
+    margin:1rem;
+    padding:5px;
+}
+
+.pParrafo{
+    margin:2px;
+
+}
+
+@media (max-width:1024px) {
+    
+    main{
+        position: relative;
+        right: 300px;
+    }
+    .mainProyectos{
+        position: relative;
+        right: 50px;
+    }
+    .mainSobreMi{
+        position: relative;
+        right: 20px;
+        flex-direction: column-reverse;
+    }
+    .foto{
+        height: 300px;
+    }
+    
+  }
+
+@media (max-width: 720px) {
+    .mainSobreMi {
+        flex-direction: column-reverse;  
+    }
+
+    main{
+        position: relative;
+        right: 500px;
+    }
+    .foto{
+        height: 200px;
+    }
+  }
+/*Sobre mi cierre*/
+    
