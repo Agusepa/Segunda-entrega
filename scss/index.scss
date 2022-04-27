@@ -1,0 +1,39 @@
+.contenedor{
+    font-family: 'Red Hat Mono', monospace;
+   
+}
+.containermain{
+    display: flex;
+    flex-direction: row;
+}
+.presentacion{
+    position: relative;
+    left: 450px;
+    top: 100px;
+    animation:fadeInLeft;
+    animation-duration: 2s;
+}
+.fotomenu{
+    height: 400px;
+    position: relative;
+    left: 350px;
+    top: 100px;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+.botoncv{
+    color: lavender;
+    background-color: rgb(21, 19, 19);
+    font-family: 'Red Hat Mono', monospace;
+    margin: 40px;
+    padding: 10px;
+    animation: fadeInDown; 
+    animation-duration: 7s ;
+    position: relative;
+    right: 2px;    
+
+    &:hover{
+        background-color: aliceblue;
+        color: black;
+    }
+}
